@@ -27,7 +27,7 @@ def check_balance(loan_balance):
   if loan_balance >= 0:
     return "You don't owe any money"
   elif loan_balance < 0:
-    return "You owe $" + str(loan_balance*(-1))
+    return "You owe $" + str(abs(loan_balance))
 
 # 8. Call your function with a negative and positive number and print what it returns.
 print(check_balance(300))
